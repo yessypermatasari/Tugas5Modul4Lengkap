@@ -1,4 +1,5 @@
-﻿using System;
+﻿using asp_mvc_4.Security;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -8,7 +9,8 @@ namespace asp_mvc_4.Controllers
 {
     public class HomeController : Controller
     {
-        public ActionResult Index() {
+        public ActionResult Index()
+        {
             return View();
         }
 
@@ -17,5 +19,16 @@ namespace asp_mvc_4.Controllers
         {
             return View();
         }
+        [AuthorizeRoles("Admin")]
+        public ActionResult AdminOnly()
+        {
+            return View();
+        }
+
+        public ActionResult UnAuthorized()
+        {
+            return View();
+        }
     }
+
 }
