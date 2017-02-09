@@ -5,3 +5,6 @@
 <br>No Absen  : 34
 <br>Sekolah   : SMK Telkom Malang
 <br>NIS       : 4854/1573.070 </h3>
+
+catatan:
+disini untuk login ke admin menggunakan username Admin1 dan password Admin1
