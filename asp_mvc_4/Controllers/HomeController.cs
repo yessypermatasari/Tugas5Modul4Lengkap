@@ -91,7 +91,11 @@ public ActionResult DeleteUser(int userID)
         }
         [HttpPost]
         [Authorize]
-        public ActionResult EditProfile(UserProfileView profile) { if (ModelState.IsValid) { UserManager UM = new UserManager(); UM.UpdateUserAccount(profile); ViewBag.Status = "Update Sucessful!"; } return View(profile); }
+        public ActionResult EditProfile(UserProfileView profile) { if (ModelState.IsValid) { UserManager UM = new UserManager(); UM.UpdateUserAccount(profile);
+                ViewBag.Status = "Update Sucessful!";
+            }
+            return View(profile);
+        }
     }
 
 }

@@ -14,6 +14,9 @@
     <div class="form-horizontal">
         <h4>UserProfileView</h4>
         <hr />
+        <span class="alert-success">
+        @ViewBag.Status
+        </span>
         @Html.ValidationSummary(true, "", new { @class = "text-danger" })
         @Html.HiddenFor(model => model.SYSUserID)
 
